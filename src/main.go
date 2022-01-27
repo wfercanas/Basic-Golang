@@ -270,6 +270,21 @@ func structs() {
 	fmt.Println(newCar)
 }
 
+// Public and private
+func publicAndPrivate() {
+	var myCar mypackage.CarPublic
+	myCar.Brand = "Ferrari"
+	myCar.Year = 2020
+	
+	fmt.Println(myCar)
+	
+	// var myOtherCar mypackage.carPrivate
+	// fmt.Println(myOtherCar)
+	
+	mypackage.PrintMessage()
+}
+
+
 func main() {
 	// Class: const, var and zero-values
 	// constAndVar()
@@ -308,14 +323,5 @@ func main() {
 	// structs()
 
 	// Class: Public or Private
-	var myCar mypackage.CarPublic
-	myCar.Brand = "Ferrari"
-	myCar.Year = 2020
-
-	fmt.Println(myCar)
-
-	// var myOtherCar mypackage.carPrivate
-	// fmt.Println(myOtherCar)
-
-	mypackage.PrintMessage()
+	publicAndPrivate()
 }
