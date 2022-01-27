@@ -92,6 +92,30 @@ func functions() {
 	fmt.Println("Only value:", onlyValue1)
 }
 
+func forCycle() {
+	// Conditional
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+	}
+	
+	// While
+	counter := 20
+	for counter < 30 {
+		fmt.Println(counter)
+		counter++
+	}
+	
+	// Forever
+	counterForever := 0
+	for {
+		fmt.Println(counterForever)
+		counterForever++
+		if counterForever == 100000 {
+			break
+		}
+	}
+}
+
 func main() {
 	// Class: const, var and zero-values
 	// constAndVar()
@@ -103,5 +127,8 @@ func main() {
 	// fmtPackage()
 
 	// Class: Functions
-	functions()
+	// functions()
+
+	// Class: For
+	forCycle()
 }
