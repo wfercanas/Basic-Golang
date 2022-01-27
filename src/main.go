@@ -207,6 +207,34 @@ func arraysAndSlices() {
 	fmt.Println(slice) // [0 1 2 3 4 5 6 7 8 9 10]
 }
 
+// Class: range
+func rangeClass() {
+	slice := []string{"Hola", "Que", "Hace"}
+	
+	// Both values	
+	for i, valor := range slice {
+		fmt.Println(i, valor)
+	}
+	
+	// Only second return
+	for _, valor := range slice {
+		fmt.Println(valor)
+	}
+	
+	// Only first return
+	for i := range slice {
+		fmt.Println(i)
+	}
+}
+
+func isPalindromo(text string) bool {
+	var textReversed string
+	for i := len(text)-1; i >= 0; i-- {
+		textReversed += string(text[i])
+	}
+	return text == textReversed
+}
+
 func main() {
 	// Class: const, var and zero-values
 	// constAndVar()
@@ -231,5 +259,11 @@ func main() {
 	// deferBreakContinue()
 
 	// Class: Arrays and Slices
-	arraysAndSlices()
+	// arraysAndSlices()
+
+	// Class: Range
+	rangeClass()
+	text := "galleta"
+	fmt.Println("Es palindromo la palabra " + text + "?", isPalindromo(text))
+
 }
