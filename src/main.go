@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"golang-platzi/src/mypackage"
+)
 
 func constAndVar() {
 	// Constantes
@@ -302,5 +305,17 @@ func main() {
 	// maps()
 
 	// Class: Structs
-	structs()
+	// structs()
+
+	// Class: Public or Private
+	var myCar mypackage.CarPublic
+	myCar.Brand = "Ferrari"
+	myCar.Year = 2020
+
+	fmt.Println(myCar)
+
+	// var myOtherCar mypackage.carPrivate
+	// fmt.Println(myOtherCar)
+
+	mypackage.PrintMessage()
 }
