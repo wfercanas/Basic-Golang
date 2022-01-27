@@ -231,4 +231,5 @@ func main() {
 	// deferBreakContinue()
 
 	// Class: Arrays and Slices
+	arraysAndSlices()
 }
