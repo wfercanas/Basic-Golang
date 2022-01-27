@@ -226,13 +226,31 @@ func rangeClass() {
 		fmt.Println(i)
 	}
 }
-
 func isPalindromo(text string) bool {
 	var textReversed string
 	for i := len(text)-1; i >= 0; i-- {
 		textReversed += string(text[i])
 	}
 	return text == textReversed
+}
+
+func maps() {
+	m := make(map[string]int)
+
+	m["jose"] = 14
+	m["pepito"] = 20
+
+	fmt.Println(m)
+
+	for i, value := range m {
+		fmt.Println(i, value)
+	}
+
+	value := m["jose"]
+	fmt.Println(value)
+
+	wrong, ok := m["joseph"]
+	fmt.Println(wrong, ok) // 0 false : porque no existe la llave
 }
 
 func main() {
@@ -262,8 +280,10 @@ func main() {
 	// arraysAndSlices()
 
 	// Class: Range
-	rangeClass()
-	text := "galleta"
-	fmt.Println("Es palindromo la palabra " + text + "?", isPalindromo(text))
+	//rangeClass()
+	//text := "galleta"
+	//fmt.Println("Es palindromo la palabra " + text + "?", isPalindromo(text))
 
+	// Maps
+	maps()
 }
