@@ -158,6 +158,26 @@ func switchConditional() {
 	}
 }
 
+func deferBreakContinue() {
+	// defer
+	fmt.Println("Hola")
+	defer fmt.Println("Mundo")
+	
+	// continue and break
+	for i := 0; i < 10; i++ {
+		if i == 2 {
+			fmt.Println("Es 2")
+			continue
+		}
+		if i == 8 {
+			fmt.Println("Es 8")
+			break
+		}
+		fmt.Println(i)
+	}	
+
+}
+
 func main() {
 	// Class: const, var and zero-values
 	// constAndVar()
@@ -174,8 +194,10 @@ func main() {
 	// Class: For
 	// forCycle()
 
-	// Conditionals
+	// Class: Conditionals
 	// conditionals()
-	switchConditional()
-	
+	// switchConditional()
+
+	// Class: defer, break y continue
+	deferBreakContinue()
 }
