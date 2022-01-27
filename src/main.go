@@ -2,21 +2,21 @@ package main
 
 import "fmt"
 
-func main() {
+func constAndVar() {
 	// Constantes
 	const pi float64 = 3.1416
 	const pi2 = 3.1416
 	fmt.Println("pi:", pi)
 	fmt.Println("pi2:", pi2)
-
+	
 	// Variables
 	base := 12
 	var altura int = 14
 	var area int
-
+	
 	area = base * altura
 	fmt.Println("Area de un cuadrado:", area)
-
+	
 	// Zero Values
 	var a int
 	var b float32
@@ -26,4 +26,27 @@ func main() {
 	fmt.Println("b:", b)
 	fmt.Println("c:", c)
 	fmt.Println("d:", d)
+}
+
+func arithmetic() {
+	x := 10
+	y := 50
+	sum := x + y
+	less := x - y
+	mult := x * y
+	div := y / x
+	mod := y % x
+	fmt.Println("sum:", sum)
+	fmt.Println("less:", less)
+	fmt.Println("mult:", mult)
+	fmt.Println("div:", div)
+	fmt.Println("mod:", mod)
+}
+
+func main() {
+	// Class: const, var and zero-values
+	// constAndVar()
+
+	// Class: Arithmetic
+	arithmetic()
 }
