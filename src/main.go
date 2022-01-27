@@ -253,6 +253,20 @@ func maps() {
 	fmt.Println(wrong, ok) // 0 false : porque no existe la llave
 }
 
+// Class: structs
+type car struct {
+	brand string
+	year 	int
+}
+func structs() {
+	myCar := car{brand: "Ford", year: 2020}
+	fmt.Println(myCar)
+
+	var newCar car
+	newCar.brand = "Ferrari"
+	fmt.Println(newCar)
+}
+
 func main() {
 	// Class: const, var and zero-values
 	// constAndVar()
@@ -284,6 +298,9 @@ func main() {
 	//text := "galleta"
 	//fmt.Println("Es palindromo la palabra " + text + "?", isPalindromo(text))
 
-	// Maps
-	maps()
+	// Class: Maps
+	// maps()
+
+	// Class: Structs
+	structs()
 }
