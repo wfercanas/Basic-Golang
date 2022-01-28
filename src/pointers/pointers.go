@@ -25,13 +25,13 @@ func main() {
 	*b = 100
 	fmt.Println(a) // 100
 
-	myPc := pc{ram: 16, disk: 200, brand:"msi"}
-	fmt.Println(myPc)
-	myPc.ping()
+	computer := pc{ram: 16, disk: 200, brand:"msi"}
+	fmt.Println(computer)
+	computer.ping()
 
-	fmt.Println(myPc)
-	myPc.duplicateRAM()
-	fmt.Println(myPc)
-	myPc.duplicateRAM()
-	fmt.Println(myPc)
+	fmt.Println(computer)
+	computer.duplicateRAM()
+	fmt.Println(computer)
+	computer.duplicateRAM()
+	fmt.Println(computer)
 }
