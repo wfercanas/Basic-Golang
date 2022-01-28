@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This project contains basic exercises to learn and practice the core concepts and syntax of Go. Within each folder you can find a Go file where you can a specific concept applied.
+This project contains basic exercises to learn and practice the core concepts and syntax of Go. Within each folder you can find a Go file where you can review a specific concept applied.
 
 ## Concepts
 
